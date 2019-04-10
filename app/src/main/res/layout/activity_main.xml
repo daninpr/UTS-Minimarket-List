@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:columnCount="2"
+    app:rowCount="2"
+    app:orientation="horizontal">
+
+    <FrameLayout
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:background="#5F9EA0"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="tambahClick">
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="97dp"
+                android:layout_height="86dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/add"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Tambah Data"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:background="#D2691E">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="minimarketClick">
+
+            <ImageView
+                android:id="@+id/list"
+                android:layout_width="97dp"
+                android:layout_height="86dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/minimarket" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/list"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Minimarket"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:background="#CD5C5C">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="userClick">
+
+            <ImageView
+                android:id="@+id/user"
+                android:layout_width="97dp"
+                android:layout_height="93dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/users" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user"
+                android:layout_centerHorizontal="true"
+                android:text="Admin"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:background="#B8860B"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="logoutMinimarket">
+
+            <ImageView
+                android:layout_width="97dp"
+                android:layout_height="86dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/logout"
+                android:id="@+id/logout" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logout"
+                android:layout_centerHorizontal="true"
+                android:text="Log Out" />
+        </RelativeLayout>
+    </FrameLayout>
+</android.support.v7.widget.GridLayout>

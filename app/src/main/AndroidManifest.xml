@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.daninpr.minimarket">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Detail_MainActivity"
+            android:label="Detail Minimarket"
+            android:parentActivityName=".MinimarketList"></activity>
+        <activity
+            android:name=".User_Main_Activity"
+            android:label="Admin"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Login_Main_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Minimarket_MainActivity"
+            android:label="Tambah Minimarket"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Dashboard"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.daninpr.minimarket.Login_Main_Activity" />
+        </activity>
+        <activity
+            android:name=".MinimarketList"
+            android:label="Minimarket"
+            android:parentActivityName=".MainActivity" />
+    </application>
+
+</manifest>
